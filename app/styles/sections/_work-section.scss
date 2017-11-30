@@ -1,0 +1,100 @@
+.work-section {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.work-section-header {
+  position: relative;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h2 {
+    font-family: $playfairdisplaybold;
+    font-size: 22px;
+    color: $headers;
+  }
+  .pinterest {
+    font-family: $robotolight;
+    font-size: 14px;
+    color: $headers;
+    display: inline-block;
+    &::after {
+      content: '';
+      display: inline-block;
+      @include sprite($right-arrow);
+      margin-left: 10px;
+
+    }
+  }
+}
+
+.work-section-body {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  .pin {
+    position: relative;
+    width: 200px;
+    height: 266px;
+  }
+  .pin1 {
+    background-color: #bcbcbc;
+  }
+  .pin2 {
+    background-color: #acacac;
+  }
+  .pin3 {
+    background-color: #a1a1a1;
+  }
+  .pin4 {
+    background-color: #a4a4a4;
+  }
+  .pin5 {
+    background-color: #;
+  }
+  .pin6 {
+    background-color: #adadad;
+  }
+  .pin7 {
+    background-color: #ACACAC;
+  }
+  .pin8 {
+    background-color: #bcbcbc;
+  }
+  .pin9 {
+    background-color: #ACACAC;
+  }
+  .pin10 {
+    background-color: #a1a1a1;
+  }
+  .pin11 {
+    background-color: #b6b6b6;
+  }
+
+  .pin12 {
+    background-color: #acacac;
+  }
+}
+
+.work-section-footer {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-work {
+    @extend .btn;
+    &:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+  }
+}
