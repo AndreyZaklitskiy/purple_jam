@@ -51,28 +51,28 @@
     background-color: #bcbcbc;
   }
   .pin2 {
-    background-color: #acacac;
-  }
-  .pin3 {
-    background-color: #a1a1a1;
-  }
-  .pin4 {
     background-color: #a4a4a4;
   }
+  .pin3 {
+    background-color: $logo;
+  }
+  .pin4 {
+    background-color: #acacac;
+  }
   .pin5 {
-    background-color: #;
+    background-color: $turquoise;
   }
   .pin6 {
-    background-color: #adadad;
+    background-color: green;
   }
   .pin7 {
-    background-color: #ACACAC;
-  }
-  .pin8 {
     background-color: #bcbcbc;
   }
+  .pin8 {
+    background-color: $purple2;
+  }
   .pin9 {
-    background-color: #ACACAC;
+    background-color: #b6b6b6;
   }
   .pin10 {
     background-color: #a1a1a1;
@@ -82,7 +82,7 @@
   }
 
   .pin12 {
-    background-color: #acacac;
+    background-color: $purple;
   }
 }
 

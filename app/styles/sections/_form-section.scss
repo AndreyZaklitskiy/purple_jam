@@ -1,0 +1,79 @@
+.form-section .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  .form-section-child {
+    h2 {
+      font-family: $playfairdisplaybold;
+      font-size: 22px;
+      color: $headers;
+    }
+  }
+}
+
+.form-section-form-block {
+  width: 460px;
+  form {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 20px;
+      height: 43px;
+      max-width: none;
+      padding-left: 18px;
+      font-family: $robotolight;
+      font-size: 14px;
+      color: #B0AFB3;
+      border: 1px solid #E5E5E5;
+      &:focus {
+        color: $headers;
+      }
+    }
+    textarea {
+      resize: none;
+      margin-bottom: 35px;
+      height: 198px;
+      max-width: none;
+      border: 1px solid #E5E5E5;
+      color: #B0AFB3;
+      font-family: $robotolight;
+      font-size: 14px;
+      padding-left: 18px;
+      padding-top: 18px;
+      &:focus {
+        color: $headers;
+      }
+    }
+    .btn-submit {
+      @extend .btn;
+      background-color: transparent;
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+.form-section-clients-block {
+  .clients-logos {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+
+.client-logo {
+  height: 90px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+

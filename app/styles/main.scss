@@ -20,6 +20,10 @@
 @import "sections/video-section";
 @import "sections/team-section";
 @import "sections/work-section";
+@import "sections/slider-section";
+@import "sections/form-section";
+@import "sections/footer-section";
+
 
 
 
@@ -49,9 +53,6 @@ body {
 
 
 .btn {
-  //&:hover {
-  //    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  //  }
   text-transform: uppercase;
   font-family: $hammersithoneregular;
   font-size: 16px;
