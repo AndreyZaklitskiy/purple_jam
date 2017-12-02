@@ -6,8 +6,8 @@ footer {
   -webkit-background-size: cover;
   background-size: cover;
   width: 100%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 150px;
   &::before {
     content: '';
     position: absolute;
@@ -28,9 +28,13 @@ footer {
 
 .footer-logo-block {
   max-width: 280px;
+  .footer-logo {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts {
+  padding-top: 20px;
   max-width: 270px;
   .address {
     &:before {
@@ -51,6 +55,10 @@ footer {
   }
 }
 
+.sotiall {
+  padding-top: 20px;
+}
+
 .footer-element {
   display: flex;
   flex-direction: column;
@@ -59,14 +67,17 @@ footer {
     font-size: 15px;
     color: #fff;
     letter-spacing: 0.5px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   p {
-    padding-top: 25px;
+    padding-bottom: 20px;
     font-family: $robotolight;
     font-size: 14px;
     color: #fff;
     line-height: 1.6;
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -151,3 +162,39 @@ footer {
   }
 }
 
+.footer-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-corespondent-list {
+  li {
+    display: inline-block;
+    padding-right: 30px;
+    a {
+      font-size: 14px;
+      font-family: $robotoblack;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.5px;
+      &:hover {
+        color: $turquoise;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.footer-creative {
+  p {
+    font-size: 14px;
+    font-family: $robotolight;
+    color: #fff;
+  }
+}
