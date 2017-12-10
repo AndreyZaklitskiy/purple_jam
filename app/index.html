@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webapp</title>
+  <title>Purpl-jam</title>
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -14,6 +14,9 @@
   <!-- endbower -->
   <!-- endbuild -->
 
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
@@ -21,16 +24,16 @@
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+
 </head>
 <body>
 
 <header>
   <div class="container">
-    <a href="#" class="logo">
-
-      <img src="images/logo.png" alt="">
-    </a>
     <div class="header-menu">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+      </a>
       <ul class="header-menu-list">
         <li><a href="" class="head">
           HOME
@@ -55,13 +58,68 @@
         </a></li>
       </ul>
     </div>
+
+    <div class="header-slider">
+      <div class="header-slide">
+        <h1>
+          We Are Awesome Creative Agency
+        </h1>
+        <p>
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+          nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        </p>
+        <a href="#" class="first-slider-btn">
+          LEARN MORE
+        </a>
+      </div>
+      <div class="header-slide">
+        <h1>
+          We Are Awesome Creative Agency
+        </h1>
+        <p>
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+          nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        </p>
+        <a href="#" class="first-slider-btn">
+          LEARN MORE
+        </a>
+      </div>
+      <div class="header-slide">
+        <h1>
+          We Are Awesome Creative Agency
+        </h1>
+        <p>
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+          nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        </p>
+        <a href="#" class="first-slider-btn">
+          LEARN MORE
+        </a>
+      </div>
+      <div class="header-slide">
+        <h1>
+          We Are Awesome Creative Agency
+        </h1>
+        <p>
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+          nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        </p>
+        <a href="#" class="first-slider-btn">
+          LEARN MORE
+        </a>
+      </div>
+    </div>
   </div>
 </header>
 
 <div class="ourstory-section">
   <div class="container">
     <div class="ourstory-section-img">
-    <img src="images/logo2.png" alt="">
+      <img src="images/logo2.png" alt="">
     </div>
     <div class="ourstory-content">
       <h1>
@@ -300,16 +358,16 @@
         OUR HAPPY CLIENT'S
       </h2>
       <div class="clients-logos">
-          <img src="images/Zara.png" alt="" class="client-logo">
-          <img src="images/Mango.png" alt="" class="client-logo">
-          <img src="images/Barneys_New_York.png" alt="" class="client-logo">
-          <img src="images/Gucci.png" alt="" class="client-logo">
-          <img src="images/Calvin_klein.png" alt="" class="client-logo">
-          <img src="images/NIKE.png" alt="" class="client-logo">
-          <img src="images/Converse.png" alt="" class="client-logo">
-          <img src="images/Puma.png" alt="" class="client-logo">
-          <img src="images/Levi's.png" alt="" class="client-logo">
-          <img src="images/Billabong.png" alt="" class="client-logo">
+        <img src="images/Zara.png" alt="" class="client-logo">
+        <img src="images/Mango.png" alt="" class="client-logo">
+        <img src="images/Barneys_New_York.png" alt="" class="client-logo">
+        <img src="images/Gucci.png" alt="" class="client-logo">
+        <img src="images/Calvin_klein.png" alt="" class="client-logo">
+        <img src="images/NIKE.png" alt="" class="client-logo">
+        <img src="images/Converse.png" alt="" class="client-logo">
+        <img src="images/Puma.png" alt="" class="client-logo">
+        <img src="images/Levi's.png" alt="" class="client-logo">
+        <img src="images/Billabong.png" alt="" class="client-logo">
       </div>
     </div>
   </div>
@@ -411,12 +469,26 @@
   ga('send', 'pageview');
 </script>
 
+
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
+
+<!-- slick slider -->
+<script src="slick/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.header-slider').slick({
+      arrows: false,
+      dots: true
+    });
+  });
+</script>
+
 
 <!-- build:js scripts/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
